@@ -4,7 +4,7 @@
 ### use either seed() or SystemRandom() to seed the generator
 ### SystemRandom() is not available on all systems
 ### see https://docs.python.org/3/library/random.html
-from random import shuffle, seed, SystemRandom
+from random import shuffle, seed, randrange, SystemRandom
 #seed()
 SystemRandom()
 
@@ -16,10 +16,13 @@ print(datesx)
 
 ## perform iteration for...RANGE(k) number of times, print the first three
 ## iterations just to show the "shuffle" randomizer is working
+print('\nCreate a random number 100000 to 500000 for a random shuffle loop')
+idx = randrange(100000, 500000)
+print('Random shuffle this many times: ', idx)
 print('\nPrint the first three randomized dates')
-for i in range(100000):
+for i in range(idx):
     shuffle(datesx)
-    if i == 0  or i == 1 or i == 2:
+    if i in (0,1,2):
         print(datesx)
 
 ## print the final result :-)
