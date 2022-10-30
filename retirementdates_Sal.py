@@ -1,5 +1,5 @@
 ###
-### Random number generator for picking my retirement date March 2020
+### Random number generator for picking Sal's retirement date June 2021
 
 ### use either seed() or SystemRandom() to seed the generator
 ### SystemRandom() is not available on all systems
